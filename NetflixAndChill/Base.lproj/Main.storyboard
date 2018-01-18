@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,108 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NetflixAndChill" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GHV-d4-4nk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NowPlayingCell" rowHeight="181" id="OvY-FL-BYd">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="181"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OvY-FL-BYd" id="eut-70-TQl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="180.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="st7-Z7-Y38">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="180.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="patrwest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2H-8c-aKb">
+                                                            <rect key="frame" x="154" y="10" width="67" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oqC-LN-kWx">
+                                                            <rect key="frame" x="0.0" y="41" width="375" height="54"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOj-xg-VV9">
+                                                                    <rect key="frame" x="319" y="12" width="46" height="30"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                </button>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="netflix_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="y4v-7G-Rrz">
+                                                                    <rect key="frame" x="8" y="7" width="40" height="40"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="40" id="GdA-Va-Goi"/>
+                                                                        <constraint firstAttribute="width" constant="40" id="huD-6B-u4D"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The Office - S1E3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMK-ZS-nOF">
+                                                                    <rect key="frame" x="66" y="17" width="135" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="1" green="0.30543404439999999" blue="0.24084355930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="bottom" secondItem="y4v-7G-Rrz" secondAttribute="bottom" constant="7" id="2co-TP-MJx"/>
+                                                                <constraint firstItem="y4v-7G-Rrz" firstAttribute="leading" secondItem="oqC-LN-kWx" secondAttribute="leading" constant="8" id="6eY-2u-VAi"/>
+                                                                <constraint firstItem="wMK-ZS-nOF" firstAttribute="centerY" secondItem="oqC-LN-kWx" secondAttribute="centerY" id="Qnp-vc-euf"/>
+                                                                <constraint firstItem="y4v-7G-Rrz" firstAttribute="top" secondItem="oqC-LN-kWx" secondAttribute="top" constant="7" id="Tbj-uM-0Hr"/>
+                                                                <constraint firstItem="wMK-ZS-nOF" firstAttribute="leading" secondItem="y4v-7G-Rrz" secondAttribute="trailing" constant="14" id="Xqa-Op-nP8"/>
+                                                                <constraint firstItem="iOj-xg-VV9" firstAttribute="centerY" secondItem="oqC-LN-kWx" secondAttribute="centerY" id="caG-SA-HmZ"/>
+                                                                <constraint firstAttribute="trailing" secondItem="iOj-xg-VV9" secondAttribute="trailing" constant="10" id="eaJ-bW-vCz"/>
+                                                                <constraint firstAttribute="bottom" secondItem="iOj-xg-VV9" secondAttribute="bottom" constant="12" id="r9W-xr-WAw"/>
+                                                                <constraint firstItem="iOj-xg-VV9" firstAttribute="top" secondItem="oqC-LN-kWx" secondAttribute="top" constant="12" id="uA3-0C-dqL"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.062348151793959361" green="1" blue="0.89307157429505302" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="oqC-LN-kWx" secondAttribute="trailing" id="6zi-Qp-MhZ"/>
+                                                        <constraint firstItem="x2H-8c-aKb" firstAttribute="top" secondItem="st7-Z7-Y38" secondAttribute="top" constant="10" id="Hub-28-f2o"/>
+                                                        <constraint firstItem="oqC-LN-kWx" firstAttribute="leading" secondItem="st7-Z7-Y38" secondAttribute="leading" id="LB4-qP-ntN"/>
+                                                        <constraint firstAttribute="bottom" secondItem="oqC-LN-kWx" secondAttribute="bottom" constant="85.5" id="f3z-nU-mMC"/>
+                                                        <constraint firstItem="oqC-LN-kWx" firstAttribute="top" secondItem="x2H-8c-aKb" secondAttribute="bottom" constant="10" id="fop-49-nAp"/>
+                                                        <constraint firstItem="x2H-8c-aKb" firstAttribute="centerX" secondItem="st7-Z7-Y38" secondAttribute="centerX" id="xgl-fW-kVQ"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.0" blue="0.9481443006604664" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="st7-Z7-Y38" firstAttribute="leading" secondItem="eut-70-TQl" secondAttribute="leading" id="6wL-22-151"/>
+                                                <constraint firstAttribute="bottom" secondItem="st7-Z7-Y38" secondAttribute="bottom" id="RZn-QH-bNk"/>
+                                                <constraint firstItem="st7-Z7-Y38" firstAttribute="top" secondItem="eut-70-TQl" secondAttribute="top" id="oXz-yk-Cf2"/>
+                                                <constraint firstAttribute="trailing" secondItem="st7-Z7-Y38" secondAttribute="trailing" id="wir-q5-wHG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GHV-d4-4nk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MNy-Zo-agh"/>
+                            <constraint firstItem="GHV-d4-4nk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Vwu-5P-dNZ"/>
+                            <constraint firstItem="GHV-d4-4nk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hVI-81-h4Z"/>
+                            <constraint firstItem="GHV-d4-4nk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="j2A-5n-tA7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="GHV-d4-4nk" id="XPI-LQ-HzD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="netflix_logo.png" width="300" height="300"/>
+    </resources>
 </document>

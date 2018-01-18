@@ -15,6 +15,7 @@
 		42EA90F320115A0600D44B34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EA90F120115A0600D44B34 /* LaunchScreen.storyboard */; };
 		42EA90FE20115A0600D44B34 /* NetflixAndChillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA90FD20115A0600D44B34 /* NetflixAndChillTests.swift */; };
 		42EA910920115A0600D44B34 /* NetflixAndChillUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA910820115A0600D44B34 /* NetflixAndChillUITests.swift */; };
+		42EA91192011602F00D44B34 /* netflix_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EA91182011602F00D44B34 /* netflix_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		42EA910420115A0600D44B34 /* NetflixAndChillUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetflixAndChillUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42EA910820115A0600D44B34 /* NetflixAndChillUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixAndChillUITests.swift; sourceTree = "<group>"; };
 		42EA910A20115A0600D44B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42EA91182011602F00D44B34 /* netflix_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = netflix_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		42EA90D920115A0600D44B34 = {
 			isa = PBXGroup;
 			children = (
+				42EA91162011601800D44B34 /* Assets */,
 				42EA90E420115A0600D44B34 /* NetflixAndChill */,
 				42EA90FC20115A0600D44B34 /* NetflixAndChillTests */,
 				42EA910720115A0600D44B34 /* NetflixAndChillUITests */,
@@ -126,6 +129,22 @@
 				42EA910A20115A0600D44B34 /* Info.plist */,
 			);
 			path = NetflixAndChillUITests;
+			sourceTree = "<group>";
+		};
+		42EA91162011601800D44B34 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				42EA91172011602300D44B34 /* Images */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		42EA91172011602300D44B34 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				42EA91182011602F00D44B34 /* netflix_logo.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42EA90F320115A0600D44B34 /* LaunchScreen.storyboard in Resources */,
+				42EA91192011602F00D44B34 /* netflix_logo.png in Resources */,
 				42EA90F020115A0600D44B34 /* Assets.xcassets in Resources */,
 				42EA90EB20115A0600D44B34 /* Main.storyboard in Resources */,
 			);
